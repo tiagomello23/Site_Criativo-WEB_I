@@ -56,21 +56,9 @@ iframe { /*Centraliza o link presente na página*/
     color: #281E26;
     padding: 0.1px;
 }
-.black{
-    background-color: #ffffff;
-    color: #000000;
-    padding: 0.1px;
-    text-align: center;
-    padding: 30px;
-}
 .center_border{ /*Classe para fazer com que imagens fiquem centralizadas e com bordas arredondadas*/
     display: block;
     margin-left: auto;
     margin-right: auto;
     border-radius: 25px;
 }
-
-
-    <p class="black">
-        <b>violão harpa</b>
-    </p>
