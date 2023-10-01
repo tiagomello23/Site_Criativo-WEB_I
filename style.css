@@ -125,10 +125,6 @@ ul{
         margin-left: 3%;
         margin-top: 15%;
     }
-
-    header {
-        font-size: 200%;
-    }
     
     #menu {
         display: block;
@@ -169,11 +165,14 @@ ul{
 
     #menu a{
         padding: 0 1rem 1rem;
-        
     }
 
     button{
         color: #9a4d41;
         font-family: 'Didact Gothic';
+        font-size: 200%;
     }
+
+    .title{
+        font-size: 200%;
 }
