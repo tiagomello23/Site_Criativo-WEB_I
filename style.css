@@ -123,9 +123,13 @@ ul{
     body{
         margin-right: 3%;
         margin-left: 3%;
-        margin-top: 10%;
+        margin-top: 15%;
     }
 
+    header {
+        font-size: 200%;
+    }
+    
     #menu {
         display: block;
         position: absolute;
