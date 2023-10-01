@@ -1,64 +1,175 @@
-body { /*Muda a fonte e seu tamanho e cor do body*/
+body {
     font-family: 'Didact Gothic';
-    font-size: 24px;
-    background-color: #281E26;
+    font-size: 150%;
+    background-color: #1d141d;
     color: #FFFADD;
-    padding-right: 40px;
-    padding-left: 40px;
-}
-header { /*Muda as características do título que aparece dentro da página*/
-    font-family: 'Croissant One';
-    background-color: #EAC795;
-    padding: 30px;
-    text-align: center;
-    color: #97553D;
-    border-radius: 20px;
-}
-h2 { /*Determina as caracerísticas dos títulos de cada tópico*/
-    font-family: 'Croissant One';
-    padding: 30px;
-    text-align: center;
-    color: #FFFADD;
-    background-color: #97553D;
-    border-radius: 25px;
+    min-width: 200px;
+    padding-top: 6.25%;
+    margin: 0;
 }
 
-h4 { /*Partes de destaque no texto, incluindo subtítulos*/
-    font-family: 'Croissant One';
-    color: #FFFADD;
-}
-
-p { /*Mudando o espaçamento e o padding do texto*/
-    line-height: 1.50;
-    padding-right: 40px;
-    padding-left: 40px;
-}
-
-a { /*Muda a cor dos links para outras partes da página*/
+a {
     color: #EAC795;
-    line-height: 1.50;
+    text-decoration: none;
+    transition: font-size 0.3s ease;
 }
 
-iframe { /*Centraliza o link presente na página*/
-    display: block;
-    margin: 0 auto;
+a:hover {
+    font-size: 112.5%;
 }
 
-.center { /*Classe para centralizar o texto e as imagens*/
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    text-align: center;
+.title{
+    font-family: 'Croissant One';
+    font-weight: bold;
+    font-size: 1.75rem;
+    padding: 1rem;
 }
-.sepia{ /*Classe para dar destaque aos subtítulos*/
+
+header {
     background-color: #EAC795;
-    border-radius: 25px;
-    color: #281E26;
-    padding: 0.1px;
+    color: #9a4d41;
+    left: 0;
+    top: 0;
+
+    min-height: 50px;
+
+    height: 12.5%;
+    width: 100%;
+
+    padding: 1rem 1.5rem 1rem;
+
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    position: fixed;
 }
-.center_border{ /*Classe para fazer com que imagens fiquem centralizadas e com bordas arredondadas*/
+
+header a{
+    color: #9a4d41;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+footer {
+    background-color: #9a4d41;
+    left: 0;
+    bottom: 0;
+
+    min-height: 50px;
+
+    width: 100%;
+
+    padding: 1rem 1.5rem 1rem;
+
+    box-sizing: border-box;
+    display: flex;
+
+    font-weight: bold;
+}
+
+.subt{
+    font-family: 'Croissant One';
+    font-weight: bold;
+    font-size: 1.75rem;
+    padding: 1rem 0 1rem;
+    text-align: center;
+    color: #FFFADD;
+    background-color: #9a4d41;
+    width: 100%;
+}
+
+.subst{
+    font-family: 'Croissant One';
+    font-weight: bold;
+    padding: 1rem 0 1rem;
+    color: #f0c882;
+    width: 100%;
+    display: inline;
+}
+
+p{
+    padding: 0 5% 0;
+}
+
+ul{
+    padding: 0 5% 0;
+}
+
+.center {
+    text-align: center;
+    justify-content: center;
+    margin-bottom: 3%;
+}
+
+.border{
+    border-radius: 10px;
+}
+
+#btn-mobile{
+    display: none;
+}
+
+#menu{
     display: block;
-    margin-left: auto;
-    margin-right: auto;
-    border-radius: 25px;
+}
+
+#menu a{
+    padding: 0.5rem;
+}
+
+@media (max-width: 768px) {
+    body{
+        margin-right: 3%;
+        margin-left: 3%;
+        margin-top: 10%;
+    }
+
+    #menu {
+        display: block;
+        position: absolute;
+        width: 100%;
+
+        top: 70px;
+        right: 0px;
+
+        background: #EAC795;
+        transition: 0.5s;
+
+        z-index: 1000;
+        height: 0px;
+
+        visibility: hidden;
+        overflow-y: hidden;
+    }
+    #nav.active #menu {
+        height: auto;
+        visibility: visible;
+        overflow-y: hidden;
+        padding: 0.5rem;
+    }
+    #menu a {
+        padding: 1rem 0;
+        margin: 0 1rem;
+    }
+    #btn-mobile {
+        display: flex;
+        padding: 0.5rem 1rem;
+        font-size: 1rem;
+        border: none;
+        background: none;
+        cursor: pointer;
+        gap: 0.5rem;
+    }
+
+    #menu a{
+        padding: 0 1rem 1rem;
+        
+    }
+
+    button{
+        color: #9a4d41;
+        font-family: 'Didact Gothic';
+    }
 }
